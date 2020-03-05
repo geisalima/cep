@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Formulário - CEP</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header class="container-fluid bg-secondary bg-topo">
+		
+		<div class="row container-menu">
+			<div class="col-lg-8 col-12 m-auto d-lg-flex align-items-center justify-content-between py-3">
+				<div class="d-lg-inline d-flex align-items-center justify-content-between">
+					<a href="#" class="logo">Logo Topo</a>
+
+					<button class="btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+
+				<div class="collapse d-lg-inline-block" id="collapseMenu">
+					<ul class="nav flex-lg-row flex-column">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link 1</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link 2</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link 3</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link 4</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link 5</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container h-100">
+
+			<div class="row h-100 align-items-center justify-content-center text-center">
+				<div class="col-12 text-white">
+					<h1 class="text-uppercase text-white font-weight-bold">Título aqui</h1>
+					<p class="text-white-75 font-weight-light mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<main class="py-5">
+
+		<div class="container">
+			<div class="row mb-3">
+				<div class="col-lg-8 col-12 m-auto">
+					<h2>Subtítulo aqui</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-8 col-12 m-auto">
+					<h2>Consulta de CEP</h2>
+					
+					<form id="formCep" class="form-cep mt-4" method="POST" action="">
+						<div class="form-row mb-lg-3">
+							<div class="col-lg-6 col-12 mb-lg-0 mb-3">
+								<label for="cep">CEP:</label>
+								<input type="" class="form-control" id="cep" name="cep" maxlength="8" placeholder="Por favor preencha o CEP">
+							</div>
+							<div class="col-lg-6 col-12 mb-lg-0 mb-3">
+								<label for="estado">Estado:</label>
+								<input type="text" class="form-control" id="estado" name="estado" placeholder="Preencha seu estado">
+							</div>
+						</div>
+
+						<div class="form-row mb-lg-3">
+							<div class="col-lg-6 col-12 mb-lg-0 mb-3">
+								<label for="cidade">Cidade:</label>
+								<input type="text" class="form-control" id="cidade" name="cidade" placeholder="Preencha sua cidade">
+							</div>
+							<div class="col-lg-6 col-12 mb-lg-0 mb-3">
+								<label for="bairro">Bairro:</label>
+								<input type="text" class="form-control" id="bairro" name="bairro" placeholder="Preencha seu bairro">
+							</div>
+						</div>
+
+						<div class="form-row mb-lg-3">
+							<div class="col-12 mb-3">
+								<label for="rua">Rua:</label>
+								<input type="text" class="form-control" id="rua" name="rua" placeholder="Preencha sua rua">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="col-lg-6 col-12">
+								<div class="alert alert-danger" role="alert"></div>
+							</div>
+						</div>
+
+						<button type="reset" class="btn btn-secondary limpar">Limpar</button>
+						<button type="submit" class="btn btn-primary enviar">Enviar</button>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="container-fluid footer p-3">
+		<div class="row">
+			<div class="col-lg-8 col-12 m-auto">
+				<a href="#">Logo Rodapé</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
